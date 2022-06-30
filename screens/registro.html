@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tomate un mate - El santuario para los materos</title>
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="stylesheet" href="../css/style.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+	<header id="head">
+		<a href="../index.html">
+			<img src="../img/logo.png" alt="Logo de la tienda de mates Tomate un mate, el santuario de los materos">
+		</a>
+		<nav>
+			<ul class="navBotones">
+				<li>
+					<a href="login.html">Mi cuenta</a>
+				</li>
+				<li>
+					<a href="sabias.html">¿Sabías que...?</a>
+				</li>
+				<li>
+					<a href="catalogo.html">Catálogo</a>
+				</li>
+				<li>
+					<a href="contacto.html">Contacto</a>
+				</li>				
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Registro de cuenta</h1>
+		<section class="registro">
+			<form action="register.php">
+				<label for="nombre">Nombre/s:</label>
+				<input type="text" id="nombre" placeholder="Juan José" required>
+				<label for="apellido">Apellido/s:</label>
+				<input type="text" id="apellido" placeholder="Sánchez López" required>
+				<label for="fecha">Fecha de nacimiento:</label>
+				<input type="date" id="fecha" placeholder="dd/mm/aaaa" required>
+				<label for="genero">Género:</label>
+				<select name="" id="genero">
+					<option value="masculino">Masculino</option>
+					<option value="femenino">Femenino</option>
+					<option value="genotro">Otro</option>
+				</select>
+				<label for="telefono">Teléfono:</label>
+				<input type="tel" id="telefono" placeholder="123 456 789" required>
+				<label for="regismail">Correo:</label>
+				<input type="email" id="regismail" placeholder="correo@mail.com" required>
+				<label for="regispass">Contraseña:</label>
+				<input type="password" id="regispass" placeholder="********" required>
+				<label for="regispass">Repetir contraseña:</label>
+				<input type="password" id="regispass" placeholder="********" required>
+				<div>¿Deseas recibir novedades?</div>
+				<span class="recibirNovedades">
+					<input type="radio" id="newsy" value="sinews" name="news">
+					<label for="newsy">Sí</label>
+				</span>
+				<span class="recibirNovedades">
+					<input type="radio" id="newsn" value="nonews" name="news">
+					<label for="newsn">No</label>
+				</span>
+				<input type="submit" value="Enviar" class="botonInput">
+				<input type="reset" value="Cancelar" class="botonInput">
+			</form>
+		</section>
+	</main>
+	<footer id="footer">		
+		<a href="https://www.facebook.com/">
+		<img src="../img/facebook.png" alt="">
+		</a>
+		<a href="https://twitter.com/">
+			<img src="../img/twitter.png" alt="">
+		</a>
+		<a href="https://www.instagram.com/">
+			<img src="../img/instagram.png" alt="">
+		</a>
+		<a href="https://www.whatsapp.com/">
+			<img src="../img/whatsapp.png" alt="">
+		</a>
+		<a href="#head">
+			<img src="../img/arriba.png" alt="">
+			</a>	
+	</footer>
+</body>
+</html>

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/*==============================================*/
+/* ========== SELECTORES DE ETIQUETA ========== */
+/*==============================================*/
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-size: 3rem;
+	box-sizing: border-box
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: black;
+	color: whitesmoke;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+ 
+   ul li {
+      padding: 15px;
+   }
+
+		ul li a{
+			font-size: 2.5rem;
+			text-decoration: none;
+			color: #EEEEEE;
+			border: solid 3px #000000;
+			border-radius: 10px;
+			padding: 0px 15px;
+		}
+h1{
+	font-size: 6rem;	
+}
+
+h1,
+h2{
+	text-align: center;
+	color: #A8DBA8;
+	font-family: 'Gentium Plus', serif;
+}
+
+footer img{
+	width: 30%;
+}
+
+footer a{
+	text-align: center;
+}
+
+section form div{
+	font-weight: 700;
+	padding-top: 20px;
+}
+
+/*===========================================*/
+/* ========== SELECTORES DE CLASE ========== */
+/*===========================================*/
+
+.navBotones{
+	display: flex;
+	flex-direction: column;
+}
+
+.bloqueInfo{
+	width: 90%;
+	border: solid 2px #A8DBA8;
+	padding: 20px;
+	line-height: 3rem;
+	margin: 15px;
+}
+
+.bloqueContacto{
+	width: 80%;
+	border: solid 2px #A8DBA8;
+	padding: 20px;
+	line-height: 3rem;
+	margin: 15px;
+	grid-area
+}
+
+.bloqueUbica{
+	width: 80%;
+	border: solid 2px #A8DBA8;
+	padding: 20px;
+	line-height: 3rem;
+	margin: 15px;
+}
+
+.bloqueTrivia{
+	width: 90%;
+	border: solid 2px #A8DBA8;
+	font-size: 2rem;
+	padding: 20px;
+	line-height: 3rem;
+	margin: 10px;
+	overflow: auto;
+}
+
+.bloqueVenta{
+	border: solid 2px #A8DBA8;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+
+.login{
+	width: auto;	
+	padding-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	border: solid 2px #A8DBA8;
+	margin: 20px 0;
+}
+
+.registro{
+	width: 100vw;	
+	padding-bottom: 25px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	border: solid 2px #A8DBA8;
+	font-size: 2rem;
+}
+
+.registrarAqui{
+	width: auto;
+	border: solid 2px #A8DBA8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.mantenerSesion{
+	display: flex;
+	align-items: center;
+}
+
+.botonInput{
+	font-size: 2rem;
+	padding: 5px;
+}
+
+.recibirNovedades{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.catalogoTitulo{
+	font-size: 4rem;
+}
+
+/*===============================================*/
+/* ====== SELECTORES DE CLASE Y ETIQUETA ====== */
+/*===============================================*/
+
+.bloqueTrivia img{
+	text-align: center;
+	width: 100%;
+}
+
+.bloqueInfo1 label
+.bloqueInfo2 label{
+	font-weight: 700;
+	padding-top: 20px;
+	display: block;
+}
+
+.bloqueInfo p,
+.bloqueTrivia p,
+.bloqueContacto p{
+	font-size: 2rem;
+
+}
+
+.bloqueInfo h2,
+.bloqueTrivia h2,
+.bloqueContacto h2{
+	padding-bottom: 15px;
+}
+
+.bloqueInfo textarea{
+	width: 100%;
+}
+
+.bloqueContacto form label{
+	font-size: 2rem;
+}
+
+.bloqueContacto form input{
+	width: 100%;
+}
+
+.login form label{
+	font-weight: 700;
+	padding-top: 20px;
+	display: block;
+	text-align: center;
+}
+
+.login form span input{
+	width: 15%;
+}
+
+.login form input,
+.registro form input{
+	width: 80%;
+}
+
+.registro form label{
+	font-weight: 700;
+	padding-top: 20px;
+	display: block;
+}
+
+.registro span input{
+	width: 15%;
+}
+
+.mantenerSesion label{
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+.registrarAqui h2{
+	font-size: 3rem;
+	color: #EEEEEE;;
+	margin-bottom: 30px;
+}
+
+.registrarAqui div{
+	font-size: 3rem;
+	border: solid #000000 2px;
+	background-color: #646464;
+	border-radius: 10px;
+	padding: 10px;	
+	margin-bottom: 20px;
+}
+
+.registrarAqui div a{
+	text-decoration: none;
+	color: #EEEEEE;
+	font-weight: 700;
+}
+
+.recibirNovedades label{
+	padding-bottom: 15px;
+	padding-left: 10px;
+}
+
+.bloqueVenta figure{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+	.bloqueVenta figure p{
+		text-align: center;
+	}
+
+.bloqueVenta figure img{
+	width: auto;
+	height: auto;
+}
+
+/*========================================*/
+/* ========== SELECTORES DE ID ========== */
+/*========================================*/
+
+#head{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(120,189,120,0.5);
+	grid-area: head;
+}
+
+#conocenos{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#sabias{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+#footer{
+	margin-top: 20px;
+	background-color: rgba(120,189,120,0.5);
+	display: flex;
+	align-items: center;
+	grid-area: foot;
+}
+
+/*==============================================*/
+/* ======== IDENTIFICADORES DE GRILLAS ======== */
+/*==============================================*/
+
+.gridIndex{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: 100vw;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"head"
+	"info"
+	"foot";
+}
+
+.gridSabias{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"head"
+	"titulo"
+	"index"
+	"trivia"
+	"foot";
+}
+
+.gridLogin{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"head"
+	"titulo"
+	"login"
+	"regis"
+	"foot";
+}
+
+.gridContacto{
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	"head"
+	"titulo"
+	"form"
+	"aside"
+	"foot";
+}
+
+.areaInfo{
+	grid-area: info;
+}
+
+.areaTrivia{
+	grid-area: trivia;
+}
+
+.areaIndice{
+	grid-area: index;
+	border: solid 2px #A8DBA8;
+}
+
+.areaLogin{
+	grid-area: login;
+	width: 100vw;
+}
+
+.areaRegis{
+	grid-area: regis;
+}
+
+.titulo{
+	grid-area: titulo;
+}
+
+.contactoFormulario{
+	grid-area: form;
+}
+
+.asideContact{
+	grid-area: aside;
+}
+
+/*=================================*/
+/* ======== MEDIA QUERIES ======== */
+/*=================================*/
+
+@media only screen and (min-width: 768px){
+	.navBotones{
+		flex-direction: row;
+	}
+	.login form input{
+		width: auto;
+		grid-column-gap: 10px;
+	}
+	.bloqueTrivia{
+		width: 47%;
+	}
+}
+
+@media only screen and (min-width: 1024px){
+	#conocenos{
+		flex-wrap: nowrap;
+	}
+	.bloqueInfo{
+		width: 33%;
+	}
+	.areaLogin{
+		width: auto;
+	}
+	
+	.gridLogin{
+		grid-template-columns: 45vw 10vw 45vw;
+		grid-template-areas:
+		"head head head"
+		"titulo titulo titulo"
+		"login . regis"
+		"foot foot foot";
+	}
+	#sabias{
+		flex-wrap: nowrap;
+	}
+}

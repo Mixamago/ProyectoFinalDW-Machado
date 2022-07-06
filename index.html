@@ -5,80 +5,139 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tomate un mate - El santuario para los materos</title>
 	<link rel="shortcut icon" href="img/favicon.png">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-	<div class="gridIndex">
-		<header id="head">
-			<a href="index.html">
-				<img src="img/logo.png" alt="Logo de la tienda de mates Tomate un mate, el santuario de los materos">
-			</a>
-			<nav>
-				<ul class="navBotones">
-					<li>
-						<a href="screens/login.html">Mi cuenta</a>
-					</li>
-					<li>
-						<a href="screens/sabias.html">¿Sabías que...?</a>
-					</li>
-					<li>
-						<a href="screens/catalogo.html">Catálogo</a>
-					</li>
-					<li>
-						<a href="screens/contacto.html">Contacto</a>
-					</li>				
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<div class="areaInfo">
-				<h1>Acércate a nosotros</h1>
-				<div id="conocenos">
-					<section class="bloqueInfo">
-						<h2>¿Quiénes somos?</h2>
+	<!-- Inicia botonera -->
+	<nav class="navbar navbar-expand-lg bgHead">
+ 		<div class="container-fluid">
+    		<a class="navbar-brand" href="index.html">
+    			<img src="img/logo.png" class="logoHead" alt="">
+    		</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      				<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Mi cuenta
+          				</a>
+         				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        				<li><a class="dropdown-item" href="screens/login.html">Inicio de sesión</a></li>
+	            			<li><a class="dropdown-item" href="screens/registro.html">Registro de cuenta</a></li>
+          				</ul>
+        			</li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="screens/sabias.html">¿Sabias que...?</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="screens/catalogo.html">Catálogo</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="screens/contacto.html">Contacto</a>
+			        </li>
+      			</ul>
+    		</div>
+ 		</div>
+	</nav>
+	<!-- Finaliza botonera -->
+	<!-- Inicia main -->
+	<main>
+		<!-- Inicia carrusel -->
+		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+		 	<div class="carousel-inner">
+		    	<div class="carousel-item active">
+		      		<section class="w-100 d-block boxCarrusel">
+		      			<h2>¿Quiénes somos?</h2>
 						<p>Tomate un mate es una tienda que inició en el año 2017 como un pequeño emprendimiento compuesto por un grupo de amigos de distintos países con un gusto en común: el disfrutar unos cuantos mates cuando se diese la ocasión. Resultaba una excusa perfecta para reunirnos o para platicar, con lo cual caímos en cuenta que más que una bebida, era una experiencia.</p>
-						<br>
 						<p>Con el tiempo no solo nos hemos ido forjando una reputación y una trayectoria, sino que también hemos ampliado nuestros propios conocimientos sobre la materia para poder informar a quienes están menos al tanto.</p>
-						<br>
 						<p>Nuestras puertas siempre estarán abiertas (¡en nuestro horario de atención, claro!) para todo interesado en conocer un poco más sobre esta bebida, o para quien desee compartir con nosotros.</p>
-						<br>
-					</section>
-					<section class="bloqueInfo">
-						<h2>¿Cuál es nuestro objetivo?</h2>
+		      		</section>
+		    	</div>
+		    	<div class="carousel-item">
+		      		<section class="w-100 d-block boxCarrusel">
+				      	<h2>¿Cuál es nuestro objetivo?</h2>
 						<p>Nuestro principal objetivo es promover el consumo del mate en cada vez más personas, sea cual sea su origen. Con la globalización, muchas cosas que antaño pertenecían a determinadas culturas han conseguido alcanzar otras regiones del mundo, y esta tradición no ha sido la excepción. Por ello no es raro ver a figuras internacionales como Antoine Griezman o Anthony Kiedis ingiriéndolo.</p>
-						<br>
 						<p>Nos interesa lograr que nuestros clientes puedan disfrutar de esta tradición, y que puedan volverla una parte integral de su día a día. Queremos despejar las dudas más comunes que se le pueden presentar a los menos conocedores en la material, y ofrecer artículos de calidad para brindar una experiencia inigualable.</p>
-					</section>
-					<section class="bloqueInfo">
-						<h2>¿Cuál es nuestra filosofía?</h2>
+		      		</section>
+		    	</div>
+		    	<div class="carousel-item">
+		      		<section class="w-100 d-block boxCarrusel">
+				      	<h2>¿Cuál es nuestra filosofía?</h2>
 						<p>En Tomate un mate creemos fervientemente en los beneficios que le puede ofrecer el mate a las personas tanto a nivel de salud como social. Y es que no solo la yerba mate posee propiedades beneficiosas para el cuerpo, sino que esta tradición, la cual por lo general se disfruta en compañía de otros, acerca un poco más a quienes participan de ella, al poseer un grado de confianza inherente.</p>
-						<br>
 						<p>Creemos, además, en el amplio abanico de posibilidades que puede obtenerse una vez que ampliamos nuestra mente y rompemos el estrecho marco impuesto por las viejas tradiciones. Por ello, personas más inclinadas a otra clase de bebidas, como el café o el té, descubren que pueden mezclarlas con la yerba mate para lograr una combinación exquisita y refrescante, o quienes no están muy inclinados a los sabores amargos logran disfrutar de una bebida a la altura de su paladar al endulzarlo un poco, o mezclarlo con ingredientes adicionales, tales como el jengibre o rodajas de naranja.</p>
-						<br>
 						<p>El límite es la imaginación.</p>
-					</section>
-				</div>
+		      		</section>
+		    	</div>
 			</div>
-		</main>
-		<footer id="footer">		
-				<a href="https://www.facebook.com/">
-				<img src="img/facebook.png" alt="">
-				</a>
-				<a href="https://twitter.com/">
-					<img src="img/twitter.png" alt="">
-				</a>
-				<a href="https://www.instagram.com/">
-					<img src="img/instagram.png" alt="">
-				</a>
-				<a href="https://www.whatsapp.com/">
-					<img src="img/whatsapp.png" alt="">
-				</a>
-				<a href="#head">
-					<img src="img/arriba.png" alt="">
-				</a>
-			</div>		
-		</footer>
-	</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+		  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		   		<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- Finaliza carrusel -->
+		<div class="container-fluid row my-3 justify-content-around">
+			<section class="col-lg-4 boxIndex">
+				<h2>¿Quiénes somos?</h2>
+				<p>Tomate un mate es una tienda que inició en el año 2017 como un pequeño emprendimiento compuesto por un grupo de amigos de distintos países con un gusto en común: el disfrutar unos cuantos mates cuando se diese la ocasión. Resultaba una excusa perfecta para reunirnos o para platicar, con lo cual caímos en cuenta que más que una bebida, era una experiencia.</p>
+				<p>Con el tiempo no solo nos hemos ido forjando una reputación y una trayectoria, sino que también hemos ampliado nuestros propios conocimientos sobre la materia para poder informar a quienes están menos al tanto.</p>
+				<p>Nuestras puertas siempre estarán abiertas (¡en nuestro horario de atención, claro!) para todo interesado en conocer un poco más sobre esta bebida, o para quien desee compartir con nosotros.</p>
+			</section>
+			<section class="col-lg-4 boxIndex">
+				<h2>¿Cuál es nuestro objetivo?</h2>
+				<p>Nuestro principal objetivo es promover el consumo del mate en cada vez más personas, sea cual sea su origen. Con la globalización, muchas cosas que antaño pertenecían a determinadas culturas han conseguido alcanzar otras regiones del mundo, y esta tradición no ha sido la excepción. Por ello no es raro ver a figuras internacionales como Antoine Griezman o Anthony Kiedis ingiriéndolo.</p>
+				<p>Nos interesa lograr que nuestros clientes puedan disfrutar de esta tradición, y que puedan volverla una parte integral de su día a día. Queremos despejar las dudas más comunes que se le pueden presentar a los menos conocedores en la material, y ofrecer artículos de calidad para brindar una experiencia inigualable.</p>
+			</section>
+			<section class="col-lg-4 boxIndex">
+				<h2>¿Cuál es nuestra filosofía?</h2>
+				<p>En Tomate un mate creemos fervientemente en los beneficios que le puede ofrecer el mate a las personas tanto a nivel de salud como social. Y es que no solo la yerba mate posee propiedades beneficiosas para el cuerpo, sino que esta tradición, la cual por lo general se disfruta en compañía de otros, acerca un poco más a quienes participan de ella, al poseer un grado de confianza inherente.</p>
+				<p>Creemos, además, en el amplio abanico de posibilidades que puede obtenerse una vez que ampliamos nuestra mente y rompemos el estrecho marco impuesto por las viejas tradiciones. Por ello, personas más inclinadas a otra clase de bebidas, como el café o el té, descubren que pueden mezclarlas con la yerba mate para lograr una combinación exquisita y refrescante, o quienes no están muy inclinados a los sabores amargos logran disfrutar de una bebida a la altura de su paladar al endulzarlo un poco, o mezclarlo con ingredientes adicionales, tales como el jengibre o rodajas de naranja.</p>
+				<p>El límite es la imaginación.</p>
+			</section>
+		</div>
+	</main>
+	<!-- Finaliza main -->
+	<footer id="footer" class="d-flex justify-content-around align-items-end">
+		<a target="_blank" href="https://www.facebook.com/">
+			<img src="img/facebook.png" alt="">
+		</a>
+		<a target="_blank" href="https://twitter.com/">
+			<img src="img/twitter.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.instagram.com/">
+			<img src="img/instagram.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.whatsapp.com/">
+			<img src="img/whatsapp.png" alt="">
+		</a>
+		<a href="#">
+			<img src="img/arriba.png" alt="">
+		</a>
+	</footer>
+	<!--<footer id="footer" class="d-flex justify-content-around">		
+		<a target="_blank" href="https://www.facebook.com/">
+		<img src="img/facebook.png" alt="">
+		</a>
+		<a target="_blank" href="https://twitter.com/">
+			<img src="img/twitter.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.instagram.com/">
+			<img src="img/instagram.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.whatsapp.com/">
+			<img src="img/whatsapp.png" alt="">
+		</a>
+		<a href="#head">
+			<img src="img/arriba.png" alt="">
+		</a>		
+	</footer>-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

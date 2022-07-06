@@ -5,90 +5,99 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tomate un mate - El santuario para los materos</title>
 	<link rel="shortcut icon" href="img/favicon.png">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-	<div class="gridContacto">
-		<header id="head">
-			<a href="../index.html">
-				<img src="../img/logo.png" alt="Logo de la tienda de mates Tomate un mate, el santuario de los materos">
-			</a>
-			<nav>
-				<ul class="navBotones">
-					<li>
-						<a href="login.html">Mi cuenta</a>
-					</li>
-					<li>
-						<a href="sabias.html">¿Sabías que...?</a>
-					</li>
-					<li>
-						<a href="catalogo.html">Catálogo</a>
-					</li>
-					<li>
-						<a href="contacto.html">Contacto</a>
-					</li>				
-				</ul>
-			</nav>
-		</header>
-		<h1 class="titulo">Contáctanos</h1>
-		<main class="contactoFormulario">		
-			<section class="bloqueContacto">
-				<h2>Formulario de contacto</h2>
-				<form action="contacto.php">	
-					<label for="nombre">Nombre completo:</label>
-					<input type="text" id="nombre" placeholder="Luis Perez" required>
-					<label for="correo">Correo electrónico:</label>
-					<input type="email" id="correo" placeholder="correo@mail.com" required>
-					<label for="telefono">Teléfono:</label>
-					<input type="tel" id="telefono" placeholder="012 345 678">
-					<label for="motivo">Motivo:</label>
-					<select name="" id="motivo">
-						<option value="reclamo">Reclamo</option>
-						<option value="compra">Compra</option>
-						<option value="consulta">Consulta</option>
-						<option value="propuesta">Propuesta</option>
-					</select>
-					<label for="mensaje">Mensaje:</label>
-					<textarea name="" id="mensaje" cols="30" rows="10" placeholder="Escriba aquí."></textarea>
-					<input type="submit" value="Enviar">
-					<input type="reset" value="Cancelar">
-				</form>
-			</section>
-		</main>
-		<aside class="asideContact">
-			<div class="bloqueContacto">
-				<h2>Otros medios de contacto</h2>
-				<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Beatae ratione illo inventore, necessitatibus reprehenderit impedit libero earum ullam expedita dolor maxime laudantium, maiores veniam animi nisi, ex quibusdam perspiciatis nobis!</p>
-				<p>Obcaecati ullam fuga sit quisquam ratione eum adipisci facere, animi similique tempore. Neque, atque quisquam id voluptatum ratione reiciendis doloribus obcaecati, saepe deleniti quidem iusto. Natus, rerum nam odio nulla?</p>
-				<p>Culpa tempore sit voluptatem obcaecati, nihil id, recusandae itaque cumque ad placeat fugiat, aliquam aspernatur ut debitis laborum, incidunt ducimus earum? Amet placeat animi in laudantium dolorum optio ab libero.</p>
-				<p>Reprehenderit obcaecati ullam doloribus exercitationem numquam voluptatem quia vel facilis est, aperiam, possimus temporibus molestiae, neque minima odit quis et, consectetur. Et magnam numquam voluptas inventore, rerum fuga consectetur illo.</p>
-			</div>
-			<div class="bloqueUbica">
-				<h2>Contáctamos presencialmente</h2>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorem consequatur, sunt! Aut, illum. Fugiat earum architecto recusandae, ducimus deserunt consequuntur quia amet culpa nobis voluptate dicta impedit eius illo?</p>
-				<p>Ab, dolor ratione quo, officia atque sequi vero labore facere maxime dicta, blanditiis veritatis. Esse eaque reprehenderit necessitatibus vitae? Hic dolorum ipsam reprehenderit nihil exercitationem nobis libero aut sapiente voluptates.</p>
-				<p>Ullam hic, eligendi tenetur blanditiis saepe vel. Commodi cumque impedit, adipisci quos recusandae et, voluptate tempore animi vitae. Nulla, at, corporis. Molestias quaerat neque fugiat voluptatem tenetur. Consectetur, et, placeat!</p>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13093.975730651722!2d-56.1697955!3d-34.8689412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6f6776baeb3a995!2sNuevocentro%20Shopping!5e0!3m2!1ses!2suy!4v1655188169609!5m2!1ses!2suy" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div>
-		</aside>
-	<footer id="footer">		
-			<a href="https://www.facebook.com/">
+	<!-- Inicia botonera -->
+	<nav class="navbar navbar-expand-lg bgHead">
+ 		<div class="container-fluid">
+    		<a class="navbar-brand" href="../index.html">
+    			<img src="../img/logo.png" class="logoHead" alt="">
+    		</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      				<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Mi cuenta
+          				</a>
+         				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        				<li><a class="dropdown-item" href="login.html">Inicio de sesión</a></li>
+	            			<li><a class="dropdown-item" href="registro.html">Registro de cuenta</a></li>
+          				</ul>
+        			</li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="sabias.html">¿Sabias que...?</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="catalogo.html">Catálogo</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="contacto.html">Contacto</a>
+			        </li>
+      			</ul>
+    		</div>
+ 		</div>
+	</nav>
+	<!-- Termina botonera -->
+	<!-- Empieza main -->
+	<main class="row w-100">
+		<!-- Inicia formulario -->
+		<section class="boxContacto col-sm-12 col-md-6">
+			<h2>Formulario de contacto</h2>
+			<form>
+				<div class="mb-3">
+				    <label for="nombre" class="form-label">Nombre completo:</label>
+				    <input type="text" class="form-control" id="nombre" placeholder="Ingrese nombre completo">
+				</div>
+				<div class="mb-3">
+					<label for="correo" class="form-label">Correo electrónico:</label>
+					<input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+				</div>
+				<div class="mb-3">
+				    <label for="telefono" class="form-label">Teléfono de contacto:</label>
+				    <input type="tel" class="form-control" id="telefono" placeholder="012 345 678">
+				</div>
+				<div class="mb-3">
+					<label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deje su mensaje."></textarea>
+				</div>
+				<input type="submit" value="Enviar" class="btn botonContacto">
+				<input type="reset" value="Cancelar" class="btn botonContacto">
+			</form>
+		</section>
+		<!-- Termina formulario -->
+		<section class="boxContacto col-sm-12 col-md-6">
+			<h2>Otros medios de contacto</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Eius possimus fugit error asperiores pariatur dolor sunt alias, id eum molestias in ratione itaque expedita optio sapiente eos nesciunt aperiam eveniet.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Dolores amet accusantium repudiandae quibusdam vero, fugiat est quo ratione deserunt laborum distinctio, saepe sunt, provident veritatis laudantium tenetur magnam voluptas ipsam?</p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13093.975730651722!2d-56.1697955!3d-34.8689412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6f6776baeb3a995!2sNuevocentro%20Shopping!5e0!3m2!1ses!2suy!4v1655188169609!5m2!1ses!2suy" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>			
+		</section>
+	</main>
+	<!-- Finaliza main -->
+	<!-- Empieza footer -->
+	<footer id="footer" class="d-flex justify-content-around align-items-end">
+		<a target="_blank" href="https://www.facebook.com/">
 			<img src="../img/facebook.png" alt="">
-			</a>
-			<a href="https://twitter.com/">
-				<img src="../img/twitter.png" alt="">
-			</a>
-			<a href="https://www.instagram.com/">
-				<img src="../img/instagram.png" alt="">
-			</a>
-			<a href="https://www.whatsapp.com/">
-				<img src="../img/whatsapp.png" alt="">
-			</a>
-			<a href="#head">
-				<img src="../img/arriba.png" alt="">
-			</a>	
-		</footer>
-	</div>
+		</a>
+		<a target="_blank" href="https://twitter.com/">
+			<img src="../img/twitter.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.instagram.com/">
+			<img src="../img/instagram.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.whatsapp.com/">
+			<img src="../img/whatsapp.png" alt="">
+		</a>
+		<a href="#">
+			<img src="../img/arriba.png" alt="">
+		</a>
+	</footer>
+	<!-- Termina footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

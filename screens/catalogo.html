@@ -5,179 +5,195 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tomate un mate - El santuario para los materos</title>
 	<link rel="shortcut icon" href="img/favicon.png">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-	<header>
-		<nav id="encabezado">
-			<a href="../index.html">
-				<img src="../img/logo.png" alt="Logo de la tienda de mates Tomate un mate, el santuario de los materos">
-			</a>
-			<ul>
-				<li>
-					<a href="login.html">Mi cuenta</a>
-					<!-- Submenú omitido temporalmente 
-					<ul>
-						<li>
-							<a href="login.html">Inicio de sesión</a>
-						</li>
-						<li>
-							<a href="registro.html">Registro</a>
-						</li>
-					</ul>
-					-->
-				</li>
-				<li>
-					<a href="sabias.html">¿Sabías que...?</a>
-				</li>
-				<li>
-					<a href="catalogo.html">Catálogo</a>
-					<!-- Submenú omitido temporalmente 
-					<ul>
-						<li>
-							<a href="catalogo.html#bombillas">Bombillas</a>
-						</li>
-						<li>
-							<a href="catalogo.html#mates">Mates</a>
-						</li>
-						<li>
-							<a href="catalogo.html#termos">Termos</a>
-						</li>
-					</ul>
-					-->
-				</li>
-				<li>
-					<a href="contacto.html">Contacto</a>
-				</li>				
-			</ul>
-		</nav>
-		<!-- Fin de botonera -->
-	</header>
-	<main>
-		<h1>Catálogo de productos</h1>
-		<h2 class="catalogoTitulo" id="bombillas">
-			Bombillas
-		</h2>
-		<section class="bloqueVenta">
-			<figure>
-				<img src="../img/venta/bombi1.webp" alt="">
-				<p>Bombilla de aluminio</p>
-				<p>$80</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/bombi2.webp" alt="">
-				<p>Bombilla de bronce</p>
-				<p>$220</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/bombi3.webp" alt="">
-				<p>Bombilla de bronce con baño de alpaca</p>
-				<p>$300</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/bombi4.webp" alt="">
-				<p>Bombilla de alpaca</p>
-				<p>$600</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/bombi5.webp" alt="">
-				<p>Bombillón de alpaca</p>
-				<p>$800</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/bombi6.webp" alt="">
-				<p>Bombillón de acero quirúrgico</p>
-				<p>$900</p>
-			</figure>
-		</section>
-		<h2 class="catalogoTitulo" id="mates">
-			Mates
-		</h2>
-		<section class="bloqueVenta">
-			<figure>
-				<img src="../img/venta/mate1.webp" alt="">
-				<p>Mate de vidrio forrado con pvc</p>
-				<p>$150</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/mate2.webp" alt="">
-				<p>Mate de vidrio forrado en cuero</p>
-				<p>$180</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/mate3.webp" alt="">
-				<p>Mate de cerámica forrado de pvc</p>
-				<p>$250</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/mate4.webp" alt="">
-				<p>Mate de cerámica forrado de cuero</p>
-				<p>$300</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/mate5.webp" alt="">
-				<p>Mate de porongo forrado en cuero</p>
-				<p>$600</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/mate6.webp" alt="">
-				<p>Mate imperial con boquilla de alpaca</p>
-				<p>$1200</p>
-			</figure>
-		</section>
-		<h2 class="catalogoTitulo" id="termos">
-			Termos
-		</h2>
-		<section class="bloqueVenta">
-			<figure>
-				<img src="../img/venta/termo1.webp" alt="">
-				<p>Termo de vidrio Arriero de 1 Lt</p>
-				<p>$300</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/termo2.webp" alt="">
-				<p>Termo de vidrio Invicta de 1 Lt</p>
-				<p>$400</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/termo3.webp" alt="">
-				<p>Termo de acero de 500ml Comet</p>
-				<p>$450</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/termo4.webp" alt="">
-				<p>Termo de acero de 750ml</p>
-				<p>$550</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/termo5.webp" alt="">
-				<p>Termo de acero Comet 1,25 Lt</p>
-				<p>$600</p>
-			</figure>
-			<figure>
-				<img src="../img/venta/termo6.webp" alt="">
-				<p>Termo de acero Termolar</p>
-				<p>$2750</p>
-			</figure>
-		</section>
+	<!-- Inicia botonera -->
+	<nav class="navbar navbar-expand-lg bgHead">
+ 		<div class="container-fluid">
+    		<a class="navbar-brand" href="../index.html">
+    			<img src="../img/logo.png" class="logoHead" alt="">
+    		</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      				<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Mi cuenta
+          				</a>
+         				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        				<li><a class="dropdown-item" href="login.html">Inicio de sesión</a></li>
+	            			<li><a class="dropdown-item" href="registro.html">Registro de cuenta</a></li>
+          				</ul>
+        			</li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="sabias.html">¿Sabias que...?</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="catalogo.html">Catálogo</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="contacto.html">Contacto</a>
+			        </li>
+      			</ul>
+    		</div>
+ 		</div>
+	</nav>
+	<!-- Termina botonera -->
+	<main class="row boxVenta w-100 justify-content-center">
+			<h2 class="tituloVenta col-sm-12">Bombillas</h2>
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi1.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombilla de aluminio</h5>
+    				<p class="catPrecio">$80</p>
+				</div>
+			</div>		
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi2.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombilla de bronce</h5>
+    				<p class="catPrecio">$220</p>
+				</div>
+			</div>	
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi3.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombilla de bronce con baño de alpaca</h5>
+    				<p class="catPrecio">$300</p>
+				</div>
+			</div>	
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi4.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombilla de alpaca</h5>
+    				<p class="catPrecio">$600</p>
+				</div>								
+			</div>
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi5.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombillón de alpaca</h5>
+    				<p class="catPrecio">$800</p>
+				</div>								
+			</div>									
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/bombi6.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Bombillón de acero quirúrgico</h5>
+    				<p class="catPrecio">$900</p>
+				</div>								
+			</div>			
+			<h2 class="tituloVenta col-sm-12">Mates</h2>	
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate1.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate de vidrio forrado con pvc</h5>
+    				<p class="catPrecio">$150</p>
+				</div>
+			</div>			
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate2.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate de vidrio forrado en cuero</h5>
+    				<p class="catPrecio">$180</p>
+				</div>
+			</div>						
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate3.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate de cerámica forrado de pvc</h5>
+    				<p class="catPrecio">$250</p>
+				</div>
+			</div>						
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate4.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate de cerámica forrado de cuero</h5>
+    				<p class="catPrecio">$300</p>
+				</div>
+			</div>		
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate5.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate de porongo forrado en cuero</h5>
+    				<p class="catPrecio">$600</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/mate6.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Mate imperial con boquilla de alpaca</h5>
+    				<p class="catPrecio">$1200</p>
+				</div>
+			</div>		
+			<h2 class="tituloVenta col-sm-12">Termos</h2>		
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo1.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de vidrio Arriero de 1 Lt</h5>
+    				<p class="catPrecio">$300</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo2.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de vidrio Invicta de 1 Lt</h5>
+    				<p class="catPrecio">$400</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo3.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de acero Comet 500 ml en color</h5>
+    				<p class="catPrecio">$450</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo4.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de acero 750 ml en color</h5>
+    				<p class="catPrecio">$550</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo5.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de acero Comet 1,25 Lt en color</h5>
+    				<p class="catPrecio">$1500</p>
+				</div>
+			</div>							
+			<div class="card col-sm-12 col-md-6 col-lg-3">
+				<img src="../img/venta/termo6.webp" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="catTitulo">Termo de acero 1 Lt Termolar</h5>
+    				<p class="catPrecio">$2750</p>
+				</div>
+			</div>																						
 	</main>
-	<footer>
-		<a href="https://www.facebook.com/">
+	<!-- Empieza footer -->
+	<footer id="footer" class="d-flex justify-content-around align-items-end">
+		<a target="_blank" href="https://www.facebook.com/">
 			<img src="../img/facebook.png" alt="">
 		</a>
-		<a href="https://twitter.com/">
+		<a target="_blank" href="https://twitter.com/">
 			<img src="../img/twitter.png" alt="">
 		</a>
-		<a href="https://www.instagram.com/">
+		<a target="_blank" href="https://www.instagram.com/">
 			<img src="../img/instagram.png" alt="">
 		</a>
-		<a href="https://www.whatsapp.com/">
+		<a target="_blank" href="https://www.whatsapp.com/">
 			<img src="../img/whatsapp.png" alt="">
 		</a>
-		<a href="#encabezado">
+		<a href="#">
 			<img src="../img/arriba.png" alt="">
 		</a>
 	</footer>
+	<!-- Termina footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

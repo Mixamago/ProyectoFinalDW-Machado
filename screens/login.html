@@ -4,75 +4,91 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Tomate un mate - El santuario para los materos</title>
-	<link rel="shortcut icon" href="../img/favicon.png">
+	<link rel="shortcut icon" href="img/favicon.png">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/style.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 </head>
 <body>
-	<div class="gridLogin">
-		<header id="head">
-			<a href="../index.html">
-				<img src="../img/logo.png" alt="Logo de la tienda de mates Tomate un mate, el santuario de los materos">
-			</a>
-			<nav>
-				<ul class="navBotones">
-					<li>
-						<a href="login.html">Mi cuenta</a>
-					</li>
-					<li>
-						<a href="sabias.html">¿Sabías que...?</a>
-					</li>
-					<li>
-						<a href="catalogo.html">Catálogo</a>
-					</li>
-					<li>
-						<a href="contacto.html">Contacto</a>
-					</li>				
-				</ul>
-			</nav>
-		</header>
-		<h1 class="titulo">Inicio de sesión</h1>
-		<main class="areaLogin">			
-			<section class="login">
-				<form action="login.php">
-					<label for="loginmail">Correo:</label>
-					<input type="email" id="loginmail" placeholder="correo@mail.com" required>
-					<label for="loginpass">Contraseña:</label>
-					<input type="password" id="loginpass" placeholder="********" required>
-					<span class="mantenerSesion">
-						<input type="checkbox" id="mantener" value="simantener">
-						<label for="mantener">Mantener sesión iniciada</label>
-					</span>
-					<input type="submit" value="Enviar" class="botonInput">
-					<input type="reset" value="Cancelar" class="botonInput">
-				</form>
-			</section>
-		</main>
-		<aside class="areaRegis">
-			<section class="registrarAqui">
-				<h2>¿Aún no te has registrado?</h2>
-				<div>
-					<a href="registro.html">Entra aquí</a>
+	<!-- Inicia botonera -->
+	<nav class="navbar navbar-expand-lg bgHead">
+ 		<div class="container-fluid">
+    		<a class="navbar-brand" href="../index.html">
+    			<img src="../img/logo.png" class="logoHead" alt="">
+    		</a>
+    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      				<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				Mi cuenta
+          				</a>
+         				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	        				<li><a class="dropdown-item" href="login.html">Inicio de sesión</a></li>
+	            			<li><a class="dropdown-item" href="registro.html">Registro de cuenta</a></li>
+          				</ul>
+        			</li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="sabias.html">¿Sabias que...?</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="catalogo.html">Catálogo</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="contacto.html">Contacto</a>
+			        </li>
+      			</ul>
+    		</div>
+ 		</div>
+	</nav>
+	<!-- Termina botonera -->
+	<!-- Inicia main -->
+	<main class="row w-100">
+		<section class="boxLogin col-sm-12 col-md-6">
+			<form>
+				<div class="mb-3">
+    				<label for="correo" class="form-label">Email address</label>
+    				<input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com" required>
 				</div>
-			</section>
-		</aside>
-		<footer id="footer">		
-			<a href="https://www.facebook.com/">
+				<div class="mb-3">
+    				<label for="clave" class="form-label">Password</label>
+    				<input type="password" class="form-control" id="clave" placeholder="********" required>
+				</div>
+				<div class="mb-3 form-check">
+    				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+    				<label class="form-check-label" for="exampleCheck1">Mantener la sesión iniciada</label>
+				</div>
+				<button type="submit" class="btn botonContacto">Submit</button>
+			</form>
+		</section>
+		<section class="boxLogin col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+			<h2>¿Aún no te has registrado?</h2>
+			<a href="registro.html">
+				<button class="btn botonRegistro">¡Regístrate!</button>
+			</a>
+		</section>
+	</main>
+	<!-- Empieza footer -->
+	<footer id="footer" class="d-flex justify-content-around align-items-end">
+		<a target="_blank" href="https://www.facebook.com/">
 			<img src="../img/facebook.png" alt="">
-			</a>
-			<a href="https://twitter.com/">
-				<img src="../img/twitter.png" alt="">
-			</a>
-			<a href="https://www.instagram.com/">
-				<img src="../img/instagram.png" alt="">
-			</a>
-			<a href="https://www.whatsapp.com/">
-				<img src="../img/whatsapp.png" alt="">
-			</a>
-			<a href="#head">
-				<img src="../img/arriba.png" alt="">
-			</a>	
-		</footer>
-	</div>
+		</a>
+		<a target="_blank" href="https://twitter.com/">
+			<img src="../img/twitter.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.instagram.com/">
+			<img src="../img/instagram.png" alt="">
+		</a>
+		<a target="_blank" href="https://www.whatsapp.com/">
+			<img src="../img/whatsapp.png" alt="">
+		</a>
+		<a href="#">
+			<img src="../img/arriba.png" alt="">
+		</a>
+	</footer>
+	<!-- Termina footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

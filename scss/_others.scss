@@ -1,0 +1,113 @@
+.boxIndex{
+	border: solid 1px $mainColor;
+	padding: 20px;
+	h2{
+		padding-bottom: 15px;
+	}
+}
+
+.boxContacto{
+	border: solid 1px $mainColor;
+	padding: 20px;
+}
+
+.boxLogin{
+	border: solid 1px $mainColor;
+	padding: 20px;
+}
+
+.boxRegis{
+	border: solid 1px $mainColor;
+	padding: 20px;
+}
+
+.boxVenta{
+	border: solid 1px $mainColor;
+	padding: 20px;	
+}
+
+.boxCarrusel{
+	border: solid 1px $mainColor;
+	padding: 3.2rem;
+	height: auto;
+	h2{
+		padding-bottom: 15px;
+	}
+}
+
+.row{
+	div{
+		background: none;
+	}
+}
+
+.card{
+	img{
+		width: 100%;
+	}
+}
+
+.nav-item{
+	a{
+		color: $white;
+		font-weight: $fontBold;
+		margin: 0px 2rem;
+		font-size: $fontMd;
+	}
+}
+
+.dropdown{
+	ul{
+		background: none;
+		border: 0px;
+	}
+}
+
+.dropdown-menu{
+	li{
+		background: none;
+	}
+}
+
+.accordion div,
+.accordion-header button{
+	background: none;
+	color: $white;
+}
+
+.tituloVenta{
+	background-color: $mainColor;
+	width: 100%;
+	color: $white;
+	font-weight: $fontXl;
+	font-size: $fontLg;
+}
+
+.botonContacto{
+	background-color: $black;
+	color: $white;
+	border: solid 1px $white;
+	padding: 0.5rem 1rem;
+	margin: 0 3rem;
+}
+
+.botonRegistro{
+	margin: 4rem;
+	color: $white;
+	font-size: $fontMd;
+	background-color: $mainColor;
+}
+
+.botonGris{
+	background: #9E9E9EFF;
+	color: $black;
+}
+
+.catTitulo{
+	font-size: $fontMd;
+}
+
+.catPrecio{
+	text-align: center;
+	font-size: $fontLg;
+}

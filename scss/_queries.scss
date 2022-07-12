@@ -1,0 +1,56 @@
+@media only screen and (min-width: 280px) and (max-width: 991px){
+	.boxIndex{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 280px){
+	.boxContacto,
+	.boxLogin{
+		margin: 0.5rem;
+	}
+
+	.botonContacto{
+		margin: 0.5rem;
+	}
+}
+
+@media only screen and (min-width: 576px){
+		.logoHead{
+			width: 250px;
+		}
+}
+
+@media only screen and (min-width: 768px){
+	.boxCarrusel{
+		padding: 5rem;
+	}
+
+	.boxContacto,
+	.boxLogin{
+		margin: 0;
+	}
+
+	.botonContacto{
+		margin: 0 2rem;
+	}
+
+	h1{
+		font-size: $fontXl;
+	}
+
+	#footerLogin{
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 992px){
+	#carouselExampleControls{
+		display: none;
+	}
+
+	.botonContacto{
+		margin: 0 4rem;
+	}
+}

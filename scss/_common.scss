@@ -1,0 +1,31 @@
+*{
+	padding: 0px;
+	marging: 0px;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	background-color: $black;
+	color: $white;
+	font-size: $fontSm;
+	line-height: 2rem;
+	font-family: $bodyFont;
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
+}
+
+h1{
+	font-size: $fontLg;
+}
+
+h1,
+h2,
+h3{
+	text-align: center;
+	color: $titleColor;
+	font-family: $titleFont;
+}

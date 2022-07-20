@@ -1,8 +1,16 @@
 // Colores
 
 $mainColor: rgba(92,142,88,1);
-//$mainColor: rgba(120,189,120,0.3);
 $secColor: rgba(139,69,19,0.1);
 $titleColor: #A8DBA8;
 $white: #F5F0F0;
 $black: #0F0E0E;
+
+$colores:(
+	"main": rgba(92,142,88,1),
+	"second": rgba(139,69,19,0.1),
+	"title": #A8DBA8,
+	"white": #F5F0F0,
+	"black": #0F0E0E,
+	"grey": #9E9E9EFF,
+	);

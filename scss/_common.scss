@@ -9,8 +9,8 @@ html{
 }
 
 body{
-	background-color: $black;
-	color: $white;
+	background-color: map-get($map:$colores, $key:"black");
+	color: map-get($map:$colores, $key:"white");
 	font-size: $fontSm;
 	line-height: 2rem;
 	font-family: $bodyFont;
@@ -26,6 +26,6 @@ h1,
 h2,
 h3{
 	text-align: center;
-	color: $titleColor;
+	color: map-get($map:$colores, $key:"title");
 	font-family: $titleFont;
 }

@@ -47,13 +47,7 @@ h3 {
   background: linear-gradient(to bottom, #5c8e58, #0F0E0E);
   padding-bottom: 50px; }
 
-.boxIndex {
-  border: solid 1px #5c8e58;
-  padding: 20px; }
-  .boxIndex h2 {
-    padding-bottom: 15px; }
-
-.boxContacto {
+.boxContacto, .boxIndex {
   border: solid 1px #5c8e58;
   padding: 20px; }
 
@@ -68,6 +62,9 @@ h3 {
 .boxVenta {
   border: solid 1px #5c8e58;
   padding: 20px; }
+
+.boxIndex h2 {
+  padding-bottom: 15px; }
 
 .boxCarrusel {
   border: solid 1px #5c8e58;
@@ -142,7 +139,7 @@ h3 {
     display: none; } }
 
 @media only screen and (min-width: 280px) {
-  .boxContacto,
+  .boxContacto, .boxIndex,
   .boxLogin {
     margin: 0.5rem; }
   .botonContacto {
@@ -155,7 +152,7 @@ h3 {
 @media only screen and (min-width: 768px) {
   .boxCarrusel {
     padding: 5rem; }
-  .boxContacto,
+  .boxContacto, .boxIndex,
   .boxLogin {
     margin: 0; }
   .botonContacto {

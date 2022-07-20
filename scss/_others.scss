@@ -1,34 +1,33 @@
+@mixin cajas($pad){
+	border: solid 1px map-get($map:$colores, $key:"main");
+	padding: $pad;
+}
+
+.boxContacto{
+		@include cajas(20px);
+}
+
+.boxLogin{
+		@include cajas(20px);
+}
+
+.boxRegis{
+		@include cajas(20px);
+}
+
+.boxVenta{
+		@include cajas(20px);
+}
+
 .boxIndex{
-	border: solid 1px $mainColor;
-	padding: 20px;
+	@extend .boxContacto;
 	h2{
 		padding-bottom: 15px;
 	}
 }
 
-.boxContacto{
-	border: solid 1px $mainColor;
-	padding: 20px;
-}
-
-.boxLogin{
-	border: solid 1px $mainColor;
-	padding: 20px;
-}
-
-.boxRegis{
-	border: solid 1px $mainColor;
-	padding: 20px;
-}
-
-.boxVenta{
-	border: solid 1px $mainColor;
-	padding: 20px;	
-}
-
 .boxCarrusel{
-	border: solid 1px $mainColor;
-	padding: 3.2rem;
+	@include cajas(3.2rem);
 	height: auto;
 	h2{
 		padding-bottom: 15px;
@@ -49,7 +48,7 @@
 
 .nav-item{
 	a{
-		color: $white;
+		color: map-get($map:$colores, $key:"white");
 		font-weight: $fontBold;
 		margin: 0px 2rem;
 		font-size: $fontMd;
@@ -72,35 +71,35 @@
 .accordion div,
 .accordion-header button{
 	background: none;
-	color: $white;
+	color: map-get($map:$colores, $key:"white");
 }
 
 .tituloVenta{
-	background-color: $mainColor;
+	background-color: map-get($map:$colores, $key:"main");
 	width: 100%;
-	color: $white;
+	color: map-get($map:$colores, $key:"white");
 	font-weight: $fontXl;
 	font-size: $fontLg;
 }
 
 .botonContacto{
-	background-color: $black;
-	color: $white;
-	border: solid 1px $white;
+	background-color: map-get($map:$colores, $key:"black");
+	color: map-get($map:$colores, $key:"white");
+	border: solid 1px map-get($map:$colores, $key:"white");
 	padding: 0.5rem 1rem;
 	margin: 0 3rem;
 }
 
 .botonRegistro{
 	margin: 4rem;
-	color: $white;
+	color: map-get($map:$colores, $key:"white");
 	font-size: $fontMd;
-	background-color: $mainColor;
+	background-color: map-get($map:$colores, $key:"main");
 }
 
 .botonGris{
-	background: #9E9E9EFF;
-	color: $black;
+	background: map-get($map:$colores, $key:"grey");
+	color: map-get($map:$colores, $key:"black");
 }
 
 .catTitulo{

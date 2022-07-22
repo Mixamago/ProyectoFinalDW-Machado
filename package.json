@@ -1,7 +1,7 @@
 {
-  "name": "git",
+  "name": "Tomate un mate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tienda física y online dedicada a la venta de termos, mates y bombillas.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Mixamago/tomateunmate-machado.git"
   },
-  "author": "",
+  "author": "Michel Machado",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Mixamago/tomateunmate-machado/issues"

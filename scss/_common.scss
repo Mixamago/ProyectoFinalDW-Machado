@@ -17,8 +17,8 @@ html{
 body{
 	background-image: url(../img/otros/fondo.webp);
 	background-color: map-get($map:$colores, $key:"negro");
-//	animation-name: fadeIn;
-//	animation-duration: 1.5s;
+	animation-name: fadeIn;
+	animation-duration: 1.5s;
 }
 
 ///////////////////////

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Acá podrás crear tu cuenta por primera vez. No olvides escoger una contraseña segura y no compartirla.">
+	<meta name="keywords" content=" registro, cuenta, contraseña">
+	<meta name="author" content="Michel Machado">	
+	<title>Tomate un mate — Registro de cuenta</title>
+	<link rel="shortcut icon" href="../img/otros/favicon.webp">
+	<link rel="stylesheet" href="../css/bs.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<!-- Inicio de la botonera -->	
+	<nav class="navbar navbar-expand-lg sticky-top" id="header">
+		<div class="container-fluid">
+	    	<a class="navbar-brand" href="../index.html">
+	    		<img src="../img/otros/logo.webp" alt="silueta de un mate con el texto tomate un mate">
+	    	</a>
+	    	<button class="navbar-toggler botonBlanco" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      		<span class="navbar-toggler-icon"></span>
+	    	</button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      		<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="catalogo.html">Catálogo</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="sabiasque.html">¿Sabías que...?</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="preguntas.html">Preguntas frecuentes</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="login.html">Mi cuenta</a>
+	        		</li>	        		
+	      		</ul>
+	    	</div>
+		</div>
+	</nav>
+<!-- Final de la botonera -->	
+<!-- Inicio del main -->
+	<main class="mb-4">
+		<img src="../img/heroe/login.webp" alt="candado de combinación en color negro con óxido, colgado de una reja en un paisaje verde" id="heroe">
+		<h1 id="titulo">Registro de cuenta</h1>	
+<!-- Inicio del formulario -->
+		<div class="container-fluid d-flex justify-content-around">
+		<div class="cajaRegis d-flex justify-content-around pb-4 px-3">
+			<form>
+				<label for="regisnombre" class="form-label logTitulo py-2">Nombre/s:</label>
+				<input type="text" class="form-control txtMd" id="regisnombre" placeholder="Juan José" required>
+				<label for="regisapellido" class="form-label logTitulo py-2">Apellido/s:</label>
+				<input type="text" class="form-control txtMd" id="regisapellido" placeholder="Gómez García" required>
+				<label for="regisfecha" class="form-label logTitulo py-2">Fecha de nacimiento:</label>
+				<input type="text" class="form-control txtMd" id="regisfecha" placeholder="dd/mm/aaaa" required>
+				<label for="regisgenero" class="form-label logTitulo py-2">Género:</label>
+				<select id="regisgenero" class="form-select txtMd" aria-label="Seleccionar genero" required>
+					<option class="form-label txtMd" value="masculino">Masculino</option>
+					<option class="form-label txtMd" value="femenino">Femenino</option>
+					<option class="form-label txtMd" value="otro">Otro</option>
+				</select>
+				<label for="registel" class="form-label logTitulo py-2">Teléfono</label>
+				<input type="tel" class="form-control txtMd" id="registel" placeholder="1234 5678" required>
+				<label for="regisemail" class="form-label logTitulo py-2">Correo electrónico:</label>
+				<input type="email" class="form-control txtMd" id="regisemail" placeholder="correo@ejemplo.com" required>
+				<label for="regispass" class="form-label logTitulo py-2">Contraseña:</label>
+				<input type="password" class="form-control txtMd" id="regispass" placeholder="********" required>
+				<div id="passmust" class="form-text txtSm txtBlanco">Debe contener entre 8 y 12 caracteres, ser alfanumérica y no tener caracteres especiales.</div>
+				<label for="regisrepass" class="form-label logTitulo py-2">Confirmar contraseña:</label>
+				<input type="password" class="form-control txtMd" id="regisrepass" placeholder="********" required>
+				<div class="d-flex justify-content-around">
+					<a href="error.html" type="submit" class="btn btnForm my-4 mx-auto">Enviar</a>
+					<a href="error.html" type="submit" class="btn btnForm my-4 mx-auto">Cancelar</a>
+				</div>
+			</form>
+		</div>
+		</div>
+<!-- Final del formulario -->
+	</main>
+<!-- Final del main -->	
+<!-- Inicio del footer -->
+	<footer class="container-fluid" id="footer">
+		<div class="row">
+			<ul class="col pieBorde my-auto">
+				<li>
+					<p class="footTitle">Navegación</p>
+				</li>
+				<li>
+					<a href="../index.html" class="footItem">Inicio</a>
+				</li>
+				<li>
+					<a href="catalogo.html" class="footItem">Catálogo</a>
+				</li>
+				<li>
+					<a href="sabiasque.html" class="footItem">¿Sabías que...?</a>
+				</li>
+				<li>
+					<a href="preguntas.html" class="footItem">Preguntas frecuentes</a>
+				</li>
+				<li>
+					<a href="login.html" class="footItem">Mi cuenta</a>
+				</li>				
+			</ul>
+			<div class="col pieBorde">
+				<p class="footTitle mb-5 txtCentro">Redes sociales</p>
+				<div class="d-flex justify-content-around align-items-center">
+					<a href="error.html">
+						<img src="../img/icons/facebook.webp" alt="logo de Facebook">
+					</a>
+					<a href="error.html">
+						<img src="../img/icons/instagram.webp" alt="logo de Instagram">
+					</a>
+					<a href="error.html">
+						<img src="../img/icons/twitter.webp" alt="logo de Twitter">
+					</a>
+				</div>			
+			</div>
+			<ul class="pieSimple col">
+				<li>
+					<p class="footTitle">Contacto</p>
+				</li>
+				<li>
+					<p class="footContact">Teléfono: 2900 1234</a>
+				</li>
+				<li>
+					<p class="footContact">WhatsApp: (097) 123 456</a>
+				</li>
+				<li>
+					<p class="footContact">Correo: tomateunmate@adinet.com</a>
+				</li>
+			</ul>			
+		</div>
+	</footer>
+<!-- Final del footer -->	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

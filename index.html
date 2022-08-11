@@ -1,131 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="description" content="Un espacio dedicado a todos aquellos fanáticos del mate, y a aquellos menos conocedores que desean aprender un poco más al respecto.">
-	<meta name="keywords" content=" mate, bombilla, tienda">
-	<title>Tomate un mate - El santuario para los materos</title>
-	<link rel="shortcut icon" href="img/favicon.png">
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="mate, bombilla, tienda">
+	<meta name="author" content="Michel Machado">
+	<title>Tomate un mate — El santuario de los materos</title>
+	<link rel="shortcut icon" href="img/otros/favicon.webp">
+	<link rel="stylesheet" href="css/bs.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<!-- Inicia botonera -->
-	<nav class="navbar navbar-expand-lg bgHead">
- 		<div class="container-fluid">
-    		<a class="navbar-brand" href="index.html">
-    			<img src="img/logo.webp" class="logoHead" alt="logotipo de la tienda Tomate un mate">
-    		</a>
-    		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      			<span class="navbar-toggler-icon"></span>
-    		</button>
-    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      				<li class="nav-item dropdown">
-          				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            				Mi cuenta
-          				</a>
-         				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-	        				<li><a class="dropdown-item" href="screens/login.html">Inicio de sesión</a></li>
-	            			<li><a class="dropdown-item" href="screens/registro.html">Registro de cuenta</a></li>
-          				</ul>
-        			</li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="screens/sabias.html">¿Sabias que...?</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="screens/catalogo.html">Catálogo</a>
-			        </li>
-			        <li class="nav-item">
-			          <a class="nav-link" href="screens/contacto.html">Contacto</a>
-			        </li>
-      			</ul>
-    		</div>
- 		</div>
+<!-- Inicio de botonera -->
+	<nav class="navbar navbar-expand-lg sticky-top" id="header">
+		<div class="container-fluid">
+	    	<a class="navbar-brand" href="index.html">
+	    		<img src="img/otros/logo.webp" alt="silueta de un mate con el texto tomate un mate">
+	    	</a>
+	    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	      		<span class="navbar-toggler-icon"></span>
+	    	</button>
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	      		<ul class="navbar-nav m-auto mb-2 mb-lg-0">
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="pages/catalogo.html">Catálogo</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="pages/sabiasque.html">¿Sabías que...?</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="pages/preguntas.html">Preguntas frecuentes</a>
+	        		</li>
+	        		<li class="nav-item">
+	          			<a class="nav-link" href="pages/login.html">Mi cuenta</a>
+	        		</li>	        		
+	      		</ul>
+	    	</div>
+		</div>
 	</nav>
-	<!-- Finaliza botonera -->
-	<!-- Inicia main -->
+<!-- Final de botonera -->
+<!-- Inicio de main -->
 	<main>
-		<!-- Inicia carrusel -->
-		<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-		 	<div class="carousel-inner">
-		    	<div class="carousel-item active">
-		      		<section class="w-100 d-block boxCarrusel">
-		      			<h2>¿Quiénes somos?</h2>
-						<p>Tomate un mate es una tienda que inició en el año 2017 como un pequeño emprendimiento compuesto por un grupo de amigos de distintos países con un gusto en común: el disfrutar unos cuantos mates cuando se diese la ocasión. Resultaba una excusa perfecta para reunirnos o para platicar, con lo cual caímos en cuenta que más que una bebida, era una experiencia.</p>
-						<p>Con el tiempo no solo nos hemos ido forjando una reputación y una trayectoria, sino que también hemos ampliado nuestros propios conocimientos sobre la materia para poder informar a quienes están menos al tanto.</p>
-						<p>Nuestras puertas siempre estarán abiertas (¡en nuestro horario de atención, claro!) para todo interesado en conocer un poco más sobre esta bebida, o para quien desee compartir con nosotros.</p>
-		      		</section>
+		<img src="img/heroe/inicio.webp" alt="mate humeante de porongo con boquilla metálica y una bombilla de metal con una piedra en el medio." id="heroe">
+		<h1 id="titulo">Conócenos</h1>
+<!-- Inicio de carrusel para medida sm -->
+		<div id="carrusel" class="carousel" data-bs-ride="carousel">
+			<div class="carousel-inner">
+		    	<div class="carousel-item active px-5">
+					<section class="cajaCarrusel mx-auto">
+						<h2 id="subTitulo">¿Quiénes somos?</h2>
+						<img src="img/otros/somos.webp" alt="silueta de una persona tomando mate en un balcón, con la ciudad de fondo." class="imgFloat">
+						<p class="txtMd espAbajo">Somos una tienda que nació durante el auge de la pandemia provocada por el COVID-19 en principios del año 2020. Mientras lo único que se escuchaban en las noticias día a día era cómo el virus no hacía más que crecer, la frase que más repetimos entre nuestros amigos y conocidos fue: “todo pasará, calma. Descansá y tomate un mate”. Una expresión tan sencilla se convirtió en un mantra que le transmitíamos a los otros mientras buscábamos serenarles.</p>
+						<p class="txtMd espAbajo">Y entonces nos dimos cuenta de lo obvio: tomarse un mate es una experiencia que va más allá de solo beber una infusión, como lo sería tomar un té. Es una experiencia que se disfruta solo y en compañía. Es algo que nos conecta con nuestros orígenes, que nos relaja. Y es algo que nos conecta con los otros cuando tenemos la oportunidad de compartirlo.</p>
+						<p class="txtMd txtBlanc espAbajo">Bajo este pensamiento decidimos iniciar un humilde emprendimiento que tenía por objetivo poder brindarles esa experiencia tan gratificante a otros, no solo vendiendo artículos de calidad, sino también asesorando a nuestros clientes para que puedan irse satisfechos y conformes con eso que formará parte de su día a día.</p>
+						<p class="txtMd espAbajo">Nuestras puertas se encuentran abiertas para todos, indistintamente de su nacionalidad, de su origen o de cualquier otra condición. Atendemos con la misma jovialidad y educación a quienquiera que se acerque para conocer un poco más o comprarnos algo.</p>
+						<p class="txtMd txtVerde txtItal txtCentro">Así que, si todavía no nos has visitado, ¿qué esperas? Vení y tomate un mate.</p>
+					</section>
 		    	</div>
 		    	<div class="carousel-item">
-		      		<section class="w-100 d-block boxCarrusel">
-				      	<h2>¿Cuál es nuestro objetivo?</h2>
-						<p>Nuestro principal objetivo es promover el consumo del mate en cada vez más personas, sea cual sea su origen. Con la globalización, muchas cosas que antaño pertenecían a determinadas culturas han conseguido alcanzar otras regiones del mundo, y esta tradición no ha sido la excepción. Por ello no es raro ver a figuras internacionales como Antoine Griezman o Anthony Kiedis ingiriéndolo.</p>
-						<p>Nos interesa lograr que nuestros clientes puedan disfrutar de esta tradición, y que puedan volverla una parte integral de su día a día. Queremos despejar las dudas más comunes que se le pueden presentar a los menos conocedores en la material, y ofrecer artículos de calidad para brindar una experiencia inigualable.</p>
-		      		</section>
+					<section class="cajaCarrusel mx-auto">
+						<h2 id="subTitulo">¿Cómo contactarnos?</h2>
+						<p class="txtMd"><span class="txtBold">Teléfono:</span> 2900 1234</p>
+						<p class="txtMd"><span class="txtBold">WhatsApp:</span> (097) 123 456</p>
+						<p class="txtMd txtBold">Formulario:</p>
+						<form>
+		  						<label for="nombre" class="form-label txtMd">Correo electrónico:</label>
+		  						<input type="text" class="form-control mb-3 txtSm" id="nombre" placeholder="Juan José Gómez García">
+		  						<label for="telefono" class="form-label txtMd">Teléfono de contacto:</label>
+		  						<input type="tel" class="form-control mb-3 txtSm" id="telefono" placeholder="1234 5678">
+		  						<label for="correo" class="form-label txtMd">Correo electrónico:</label>
+		  						<input type="email" class="form-control mb-3 txtSm" id="correo" placeholder="ingrese@correo.com">
+		  						<label for="mensaje" class="form-label txtMd">Mensaje:</label>
+		  						<textarea class="form-control txtSm-np" id="mensaje" rows="3" placeholder="Déjenos su mensaje y le responderemos a la brevedad posible."></textarea>
+		  					<div class="form-check m-3">
+		    					<input type="checkbox" class="form-check-input txtSm" id="exampleCheck1">
+		    					<label class="form-check-label txtMd" for="exampleCheck1">Enviar una copia al correo.</label>
+		  					</div>
+		  					<button type="submit" class="btn btnForm my-4">Enviar</button>
+						</form>
+					</section>
 		    	</div>
 		    	<div class="carousel-item">
-		      		<section class="w-100 d-block boxCarrusel">
-				      	<h2>¿Cuál es nuestra filosofía?</h2>
-						<p>En Tomate un mate creemos fervientemente en los beneficios que le puede ofrecer el mate a las personas tanto a nivel de salud como social. Y es que no solo la yerba mate posee propiedades beneficiosas para el cuerpo, sino que esta tradición, la cual por lo general se disfruta en compañía de otros, acerca un poco más a quienes participan de ella, al poseer un grado de confianza inherente.</p>
-						<p>Creemos, además, en el amplio abanico de posibilidades que puede obtenerse una vez que ampliamos nuestra mente y rompemos el estrecho marco impuesto por las viejas tradiciones. Por ello, personas más inclinadas a otra clase de bebidas, como el café o el té, descubren que pueden mezclarlas con la yerba mate para lograr una combinación exquisita y refrescante, o quienes no están muy inclinados a los sabores amargos logran disfrutar de una bebida a la altura de su paladar al endulzarlo un poco, o mezclarlo con ingredientes adicionales, tales como el jengibre o rodajas de naranja.</p>
-						<p>El límite es la imaginación.</p>
-		      		</section>
+					<section class="cajaCarrusel mx-auto">
+						<h2 id="subTitulo">¿Dónde estamos ubicados?</h2>
+						<p class="txtMd espAbajo">Nuestro local se encuentra en el shopping Nuevocentro, ubicado en Av. Luis Alberto de Herrera 3365. Nos pueden encontrar en el nivel 2, local 265.</p>
+						<p class="txtMd espAbajo">Estamos abiertos de lunes a domingo, de 10:00 a 21:00 en horario corrido.</p>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13093.975730651722!2d-56.1697955!3d-34.8689412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6f6776baeb3a995!2sNuevocentro%20Shopping!5e0!3m2!1ses!2suy!4v1659296141445!5m2!1ses!2suy" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</section>
 		    	</div>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-		  		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		   		<span class="visually-hidden">Previous</span>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
 			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+			<button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
 		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    	<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		<!-- Finaliza carrusel -->
-		<div class="container-fluid row my-3 justify-content-around">
-			<section class="col-lg-4 boxIndex">
-				<h2>¿Quiénes somos?</h2>
-				<p>Tomate un mate es una tienda que inició en el año 2017 como un pequeño emprendimiento compuesto por un grupo de amigos de distintos países con un gusto en común: el disfrutar unos cuantos mates cuando se diese la ocasión. Resultaba una excusa perfecta para reunirnos o para platicar, con lo cual caímos en cuenta que más que una bebida, era una experiencia.</p>
-				<p>Con el tiempo no solo nos hemos ido forjando una reputación y una trayectoria, sino que también hemos ampliado nuestros propios conocimientos sobre la materia para poder informar a quienes están menos al tanto.</p>
-				<p>Nuestras puertas siempre estarán abiertas (¡en nuestro horario de atención, claro!) para todo interesado en conocer un poco más sobre esta bebida, o para quien desee compartir con nosotros.</p>
-			</section>
-			<section class="col-lg-4 boxIndex">
-				<h2>¿Cuál es nuestro objetivo?</h2>
-				<p>Nuestro principal objetivo es promover el consumo del mate en cada vez más personas, sea cual sea su origen. Con la globalización, muchas cosas que antaño pertenecían a determinadas culturas han conseguido alcanzar otras regiones del mundo, y esta tradición no ha sido la excepción. Por ello no es raro ver a figuras internacionales como Antoine Griezman o Anthony Kiedis ingiriéndolo.</p>
-				<p>Nos interesa lograr que nuestros clientes puedan disfrutar de esta tradición, y que puedan volverla una parte integral de su día a día. Queremos despejar las dudas más comunes que se le pueden presentar a los menos conocedores en la material, y ofrecer artículos de calidad para brindar una experiencia inigualable.</p>
-			</section>
-			<section class="col-lg-4 boxIndex">
-				<h2>¿Cuál es nuestra filosofía?</h2>
-				<p>En Tomate un mate creemos fervientemente en los beneficios que le puede ofrecer el mate a las personas tanto a nivel de salud como social. Y es que no solo la yerba mate posee propiedades beneficiosas para el cuerpo, sino que esta tradición, la cual por lo general se disfruta en compañía de otros, acerca un poco más a quienes participan de ella, al poseer un grado de confianza inherente.</p>
-				<p>Creemos, además, en el amplio abanico de posibilidades que puede obtenerse una vez que ampliamos nuestra mente y rompemos el estrecho marco impuesto por las viejas tradiciones. Por ello, personas más inclinadas a otra clase de bebidas, como el café o el té, descubren que pueden mezclarlas con la yerba mate para lograr una combinación exquisita y refrescante, o quienes no están muy inclinados a los sabores amargos logran disfrutar de una bebida a la altura de su paladar al endulzarlo un poco, o mezclarlo con ingredientes adicionales, tales como el jengibre o rodajas de naranja.</p>
-				<p>El límite es la imaginación.</p>
-			</section>
+<!-- Final de carusel para medida sm -->
+<!-- Inicio del contenido para md en adelante -->
+		<div class="container-fluid" id="indiceSm">
+			<div class="row justify-content-around">
+				<section class="col-12 cajaIndex">
+					<h2 id="subTitulo">¿Quiénes somos?</h2>
+					<img src="img/otros/somos.webp" alt="silueta de una persona tomando mate en un balcón, con la ciudad de fondo." class="imgFloat">
+					<p class="txtMd espAbajo">Somos una tienda que nació durante el auge de la pandemia provocada por el COVID-19 en principios del año 2020. Mientras lo único que se escuchaban en las noticias día a día era cómo el virus no hacía más que crecer, la frase que más repetimos entre nuestros amigos y conocidos fue: “todo pasará, calma. Descansá y tomate un mate”. Una expresión tan sencilla se convirtió en un mantra que le transmitíamos a los otros mientras buscábamos serenarles.</p>
+					<p class="txtMd espAbajo">Y entonces nos dimos cuenta de lo obvio: tomarse un mate es una experiencia que va más allá de solo beber una infusión, como lo sería tomar un té. Es una experiencia que se disfruta solo y en compañía. Es algo que nos conecta con nuestros orígenes, que nos relaja. Y es algo que nos conecta con los otros cuando tenemos la oportunidad de compartirlo.</p>
+					<p class="txtMd txtBlanc espAbajo">Bajo este pensamiento decidimos iniciar un humilde emprendimiento que tenía por objetivo poder brindarles esa experiencia tan gratificante a otros, no solo vendiendo artículos de calidad, sino también asesorando a nuestros clientes para que puedan irse satisfechos y conformes con eso que formará parte de su día a día.</p>
+					<p class="txtMd espAbajo">Nuestras puertas se encuentran abiertas para todos, indistintamente de su nacionalidad, de su origen o de cualquier otra condición. Atendemos con la misma jovialidad y educación a quienquiera que se acerque para conocer un poco más o comprarnos algo.</p>
+					<p class="txtMd txtVerde txtItal txtCentro">Así que, si todavía no nos has visitado, ¿qué esperas? Vení y tomate un mate.</p>
+				</section>
+				<section class="col-6 cajaIndex">
+					<h2 id="subTitulo">¿Cómo contactarnos?</h2>
+					<p class="txtMd"><span class="txtBold">Teléfono:</span> 2900 1234</p>
+					<p class="txtMd"><span class="txtBold">WhatsApp:</span> (097) 123 456</p>
+					<p class="txtMd txtBold">Formulario:</p>
+					<form>
+	  						<label for="nombre" class="form-label txtMd">Correo electrónico:</label>
+	  						<input type="text" class="form-control mb-3 txtSm" id="nombre" placeholder="Juan José Gómez García">
+	  						<label for="telefono" class="form-label txtMd">Teléfono de contacto:</label>
+	  						<input type="tel" class="form-control mb-3 txtSm" id="telefono" placeholder="1234 5678">
+	  						<label for="correo" class="form-label txtMd">Correo electrónico:</label>
+	  						<input type="email" class="form-control mb-3 txtSm" id="correo" placeholder="ingrese@correo.com">
+	  						<label for="mensaje" class="form-label txtMd">Mensaje:</label>
+	  						<textarea class="form-control txtSm-np" id="mensaje" rows="3" placeholder="Déjenos su mensaje y le responderemos a la brevedad posible."></textarea>
+	  					<div class="form-check m-3">
+	    					<input type="checkbox" class="form-check-input txtSm" id="exampleCheck1">
+	    					<label class="form-check-label txtMd" for="exampleCheck1">Enviar una copia al correo.</label>
+	  					</div>
+	  					<a href="pages/error.html" class="btn btnForm my-4">Enviar</a>
+					</form>
+				</section>
+				<section class="col-6 cajaIndex">
+					<h2 id="subTitulo">¿Dónde estamos ubicados?</h2>
+					<p class="txtMd espAbajo">Nuestro local se encuentra en el shopping Nuevocentro, ubicado en Av. Luis Alberto de Herrera 3365. Nos pueden encontrar en el nivel 2, local 265.</p>
+					<p class="txtMd espAbajo">Estamos abiertos de lunes a domingo, de 10:00 a 21:00 en horario corrido.</p>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13093.975730651722!2d-56.1697955!3d-34.8689412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6f6776baeb3a995!2sNuevocentro%20Shopping!5e0!3m2!1ses!2suy!4v1659296141445!5m2!1ses!2suy" width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</section>
+			</div>
 		</div>
+<!-- Final del contenido para md en adelante -->		
 	</main>
-	<!-- Finaliza main -->
-	<!-- Inicia Footer -->
-	<footer id="footer" class="d-flex justify-content-around align-items-end">
-		<a target="_blank" href="https://www.facebook.com/">
-			<img src="img/facebook.png" alt="logotipo de Facebook">
-		</a>
-		<a target="_blank" href="https://twitter.com/">
-			<img src="img/twitter.png" alt="logotipo de Twitter">
-		</a>
-		<a target="_blank" href="https://www.instagram.com/">
-			<img src="img/instagram.png" alt="logotipo de Instagram">
-		</a>
-		<a target="_blank" href="https://www.whatsapp.com/">
-			<img src="img/whatsapp.png" alt="logotipo de Whatsapp">
-		</a>
-		<a href="#">
-			<img src="img/arriba.png" alt="flecha que dirige al encabezado de la página">
-		</a>
+<!-- Final del main -->
+<!-- Inicio de footer -->
+	<footer class="container-fluid" id="footer">
+		<div class="row">
+			<ul class="col pieBorde my-auto">
+				<li>
+					<p class="footTitle">Navegación</p>
+				</li>
+				<li>
+					<a href="index.html" class="footItem">Inicio</a>
+				</li>
+				<li>
+					<a href="pages/catalogo.html" class="footItem">Catálogo</a>
+				</li>
+				<li>
+					<a href="pages/sabiasque.html" class="footItem">¿Sabías que...?</a>
+				</li>
+				<li>
+					<a href="pages/preguntas.html" class="footItem">Preguntas frecuentes</a>
+				</li>
+				<li>
+					<a href="pages/login.html" class="footItem">Mi cuenta</a>
+				</li>				
+			</ul>
+			<div class="col pieBorde">
+				<p class="footTitle mb-5 txtCentro">Redes sociales</p>
+				<div class="d-flex justify-content-around align-items-center">
+					<a href="pages/error.html">
+						<img src="img/icons/facebook.webp" alt="logo de Facebook">
+					</a>
+					<a href="pages/error.html">
+						<img src="img/icons/instagram.webp" alt="logo de Instagram">
+					</a>
+					<a href="pages/error.html">
+						<img src="img/icons/twitter.webp" alt="logo de Twitter">
+					</a>
+				</div>				
+			</div>
+			<ul class="pieSimple col">
+				<li>
+					<p class="footTitle">Contacto</p>
+				</li>
+				<li>
+					<p class="footContact">Teléfono: 2900 1234</a>
+				</li>
+				<li>
+					<p class="footContact">WhatsApp: (097) 123 456</a>
+				</li>
+				<li>
+					<p class="footContact">Correo: tomateunmate@adinet.com</a>
+				</li>
+			</ul>			
+		</div>
 	</footer>
-	<!-- Termina Footer -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<!-- Final de footer -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

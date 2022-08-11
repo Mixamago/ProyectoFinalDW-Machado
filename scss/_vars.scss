@@ -1,16 +1,38 @@
-// Colores
-
-$mainColor: rgba(92,142,88,1);
-$secColor: rgba(139,69,19,0.1);
-$titleColor: #A8DBA8;
-$white: #F5F0F0;
-$black: #0F0E0E;
+/////////////
+// COLORES //
+/////////////
 
 $colores:(
-	"main": rgba(92,142,88,1),
-	"second": rgba(139,69,19,0.1),
-	"title": #A8DBA8,
-	"white": #F5F0F0,
-	"black": #0F0E0E,
-	"grey": #9E9E9EFF,
+	"negro": rgb(15, 15, 15),
+	"caja": rgba(15, 15, 15, 0.7),
+	"gris": rgb(214, 216, 217),
+	"grist": rgba(214, 216, 217,0.3),
+	"blanco": rgb(240, 240, 240),
+	"verdeo": rgba(59, 110, 100, 0.9),
+	"verdec": rgb(79, 201, 12),
+	"amarillo": rgb(182,184,44),
+	"rojo": rgb(248, 6, 18),
 	);
+
+/////////////
+// FUENTES //
+/////////////
+
+$mainFont: 'Ibarra Real Nova', serif;
+$secondFont: 'Roboto', sans-serif;
+
+///////////////////////
+// TAMAÑOS DE FUENTE //
+///////////////////////
+
+$fontSm: 1.5rem;
+$fontMd: 1.8rem;
+$fontLg: 2.2rem;
+$fontXl: 2.5rem;
+
+//////////////////////
+// PESO TIPOGRÁFICO //
+//////////////////////
+
+$reg: 400;
+$bold: 700;

@@ -1,56 +1,56 @@
-@media only screen and (min-width: 280px) and (max-width: 991px){
-	.boxIndex{
+///////////////
+// MIN & MAX //
+///////////////
+
+@media only screen and (min-width:768px) and (max-width: 991px){
+	.cajaSabias{
+		width: 48%;
+	}
+	.cardVenta{
+		width: 32%;
+	}
+}
+
+////////////////////
+// SOLO MIN O MAX //
+////////////////////
+
+@media only screen and (min-width:768px){
+	.carousel{
 		display: none;
 	}
 }
 
-@media only screen and (min-width: 280px){
-	.boxContacto,
-	.boxLogin{
-		margin: 0.5rem;
+@media only screen and (min-width:992px){
+	.cajaSabias{
+		width: 24%;
 	}
-
-	.botonContacto{
-		margin: 0.5rem;
+	.faqTitulo:hover{
+		color: map-get($map:$colores, $key:"verdec");
 	}
 }
 
-@media only screen and (min-width: 576px){
-		.logoHead{
-			width: 250px;
-		}
-}
-
-@media only screen and (min-width: 768px){
-	.boxCarrusel{
-		padding: 5rem;
-	}
-
-	.boxContacto,
-	.boxLogin{
-		margin: 0;
-	}
-
-	.botonContacto{
-		margin: 0 2rem;
-	}
-
-	h1{
-		font-size: $fontXl;
-	}
-
-	#footerLogin{
-		position: fixed;
-		bottom: 0;
+@media only screen and (max-width: 575px){
+	.pieSimple{
+		border-top: 3px solid map-get($map:$colores, $key:"negro");
 	}
 }
 
-@media only screen and (min-width: 992px){
-	#carouselExampleControls{
+@media only screen and (max-width: 767px){
+	#indiceSm{
 		display: none;
 	}
-
-	.botonContacto{
-		margin: 0 4rem;
+	.cajaSabias{
+		width: 80%;
+	}
+	.cardVenta{
+		width: 45%;
 	}
 }
+
+@media only screen and (max-width: 991px){
+	.footSocial{
+		padding: 1rem;
+	}
+}
+

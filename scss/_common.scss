@@ -1,7 +1,13 @@
+///////////////////////////
+// CONFIGURACIÓN GENERAL //
+//     DEL SITIO WEB     //
+///////////////////////////
+
 *{
 	padding: 0px;
 	marging: 0px;
 	box-sizing: border-box;
+	font-family: $secondFont;
 }
 
 html{
@@ -9,23 +15,289 @@ html{
 }
 
 body{
-	background-color: map-get($map:$colores, $key:"black");
-	color: map-get($map:$colores, $key:"white");
-	font-size: $fontSm;
-	line-height: 2rem;
-	font-family: $bodyFont;
-	animation-name: fadeIn;
-	animation-duration: 1.5s;
+	background-image: url(../img/otros/fondo.webp);
+	background-color: map-get($map:$colores, $key:"negro");
+//	animation-name: fadeIn;
+//	animation-duration: 1.5s;
 }
 
-h1{
-	font-size: $fontLg;
+///////////////////////
+// SELECTORES DE IDs //
+///////////////////////
+
+#header{
+	background: map-get($map:$colores, $key:"verdeo");	
 }
 
-h1,
-h2,
-h3{
+#footer{
+//	padding: 0px 40px;
+	background: map-get($map:$colores, $key:"verdeo");
+}
+
+#heroe{
+	width:100%;
+}
+
+#titulo{
+	color: map-get($map:$colores, $key:"verdec");
+	font-size: 6rem;
 	text-align: center;
-	color: map-get($map:$colores, $key:"title");
-	font-family: $titleFont;
+	font-family: $mainFont;
+	background: map-get($map:$colores, $key:"caja");
+}
+
+#catalogo{
+	border: none;
+}
+
+#subTitulo{
+	color: map-get($map:$colores, $key:"verdec");
+	font-size: $fontXl;
+	text-align: center;
+	font-family: $mainFont;
+	padding: 1rem 0rem;
+	font-weight: $bold;
+}
+
+#error{
+	background: map-get($map:$colores, $key:"caja");
+}
+
+//////////////////////////
+// SELECTORES DE CLASES //
+//////////////////////////
+
+.bgTrans{
+	background: none;
+}
+
+.bgVerde{
+	background: map-get($map:$colores, $key:"verdeo");
+}
+
+.pieSimple{
+	list-style: none;	
+}
+
+.pieBorde{
+	@extend .pieSimple;
+	border-right: 3px solid map-get($map:$colores, $key:"negro");
+	height: auto;
+}
+
+.botonBlanco{
+	border: 2px solid map-get($map:$colores, $key:"blanco");
+}
+
+.footItem{
+	text-decoration: none;
+	color: map-get($map:$colores, $key:"blanco");
+	font-size: $fontSm;
+	&:hover{
+		color: map-get($map:$colores, $key:"verdec")
+	}
+}
+
+.footTitle{
+	@extend .footItem;
+	font-weight: $bold;
+	&:hover{
+		color: map-get($map:$colores, $key:"blanco");
+	}
+}
+
+.footContact{
+	@extend .footItem;
+	&:hover{
+		color: map-get($map:$colores, $key:"blanco");		
+	}
+}
+
+.footSocial{
+	padding-x: 2rem;
+}
+
+.cajaIndex{
+	@include cajas;
+}
+
+.cajaCarrusel{
+	@include cajas;
+	width: 65%;
+}
+
+.cajaLog{
+	@include cajas;
+	border: solid 2px map-get($map:$colores, $key:"verdeo");
+}
+
+.cajaRegis{
+	@include cajas;
+	border: solid 2px map-get($map:$colores, $key:"verdeo");	
+	width: 80%;	
+}
+
+.cajaSabias{
+	@include cajas;
+	@include cards;
+}
+
+.cajaVenta{
+	@include cajas;
+	border: solid 2px map-get($map:$colores, $key:"verdeo");	
+}
+
+.cardVenta{
+	@include cajas;
+	@include cards;
+	width: 24%;
+}
+
+.imgVentas{
+	@include imgcards;
+}
+
+.tabPropio{
+	font-size: $fontMd;
+	text-decoration: none;	
+	background: map-get($map:$colores, $key:"verdeo");
+	color: map-get($map:$colores, $key:"blanco");
+	border-radius: 4px;
+	border: solid 1px map-get($map:$colores, $key:"negro");
+	margin: 0rem 1rem;
+	button{
+		color: map-get($map:$colores, $key:"blanco");
+		border: none;
+		&:hover{
+			color: map-get($map:$colores, $key:"verdec");
+			border: none;
+		}
+	}
+}
+
+.tituloVenta{
+	background: map-get($map:$colores, $key:"verdeo");
+	font-size: $fontXl;
+	color: map-get($map:$colores, $key:"blanco");
+	font-family: $mainFont;
+	text-align: center;
+	font-weight: $bold;
+}
+
+.advertencia{
+	font-weight: $bold;
+	color: map-get($map:$colores, $key:"rojo");
+	font-size: $fontSm;
+	line-height: $fontSm + 0.5rem;	
+}
+
+.precioVenta{
+	font-size: $fontXl;
+	line-height: $fontXl + 0.5rem;
+	color: map-get($map:$colores, $key:"amarillo");
+	font-weight: $bold;
+}
+
+.faqCuerpo{
+	background: map-get($map:$colores, $key:"caja");
+	font-size: $fontMd;
+	color: map-get($map:$colores, $key:"blanco")
+}
+
+.faqTitulo{
+	background: map-get($map:$colores, $key:"verdeo");
+	font-size: $fontLg;
+	color: map-get($map:$colores, $key:"blanco");
+}
+
+.btnForm{
+	background: map-get($map:$colores, $key:"verdeo");
+	font-size: $fontLg;
+	padding: 0rem 2rem;
+	color: map-get($map:$colores, $key:"blanco");
+	&:hover{
+		background: map-get($map:$colores, $key:"verdec");
+		color: map-get($map:$colores, $key:"negro");
+	}
+
+}
+
+.btnError{
+	width: 50%;
+	background: map-get($map:$colores, $key:"verdeo");
+	font-size: $fontLg;
+	padding: 0rem 2rem;
+	color: map-get($map:$colores, $key:"blanco");
+	&:hover{
+		background: map-get($map:$colores, $key:"grist");
+		color: map-get($map:$colores, $key:"blanco");
+		border: none;
+	}
+
+}
+
+.logTitulo{
+	color: map-get($map:$colores, $key:"verdec");
+	font-size: $fontMd;
+	line-height: $fontLg + 0.5rem;
+	font-weight: $bold;			
+}
+
+.ajusteCheck{
+	padding-top: 1.5px;
+}
+
+.imgFloat{
+	float: left;
+	padding: 1rem;
+}
+
+.imgSabias{
+	@include imgcards;
+}
+
+.errorTitulo{
+	color: map-get($map:$colores, $key:"verdec");
+	font-size: 5rem;
+	text-align: center;
+	font-family: $mainFont;
+}
+
+.errorTexto{
+	color: map-get($map:$colores, $key:"verdec");
+	font-size: $fontXl;
+	text-align: center;
+	font-family: $mainFont;
+	padding: 1rem 0rem;
+	font-weight: $bold;
+}
+
+.errorImg{
+	width: 45%;
+	border-radius: 2rem;
+}
+
+/////////////////////////////
+// SELECTORES DE ETIQUETAS //
+/////////////////////////////
+
+
+//////////////////////////////////////
+// SELECTORES DIRIGIDOS A BOOTSTRAP //
+//////////////////////////////////////
+
+.navbar-nav li{
+	padding: 0px 40px;
+}
+
+.nav-item a{
+	color: map-get($map:$colores, $key:"blanco");
+	font-size: $fontLg;
+	&:hover{
+		color: map-get($map:$colores, $key:"verdec");
+	}
+}
+
+span.carousel-control-prev-icon{
+	font-size: 7rem;
 }

@@ -1,0 +1,69 @@
+//////////////////
+// GOOGLE FONTS //
+//////////////////
+
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+//////////////////////////
+// ETIQUETAS PARA TEXTO //
+//////////////////////////
+
+/////////////
+// TAMAÑOS //
+/////////////
+
+.txtSm{
+	font-size: $fontSm;
+	line-height: $fontSm + 0.5rem;
+}
+
+.txtSm-np{
+	font-size: $fontSm;	
+}
+
+.txtMd{
+	font-size: $fontMd;
+	line-height: $fontMd + 0.5rem;	
+}
+
+.txtLg{
+	font-size: $fontLg;
+	line-height: $fontLg + 0.5rem;
+}
+
+.txtXl{
+	font-size: $fontXl;
+	line-height: $fontXl + 0.5rem;
+}
+
+/////////////
+// COLORES //
+/////////////
+
+.txtVerde{
+	color: map-get($map:$colores, $key:"verdec");
+}
+
+.txtBlanco{
+	color: map-get($map:$colores, $key:"blanco");
+}
+
+/////////////
+// ESTILOS //
+/////////////
+
+.txtCentro{
+	text-align: center;
+}
+
+.txtItal{
+	font-style: italic;
+}
+
+.txtBold{
+	font-weight: $bold;
+}
+
+.espAbajo{
+	padding-bottom: 5px;
+}

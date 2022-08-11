@@ -1,0 +1,22 @@
+@mixin cajas{
+	height: auto;
+	margin: 3px 0px;
+	background: map-get($map:$colores, $key:"caja");
+	color: map-get($map:$colores, $key:"blanco");
+}
+
+@mixin cards{
+	border: solid 2px map-get($map:$colores, $key:"verdeo");
+	border-radius: 1rem 1rem 0px 0px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+@mixin imgcards{
+	width: 100%;
+	border-bottom: solid 2px map-get($map:$colores, $key:"verdeo");
+	padding-bottom: 0.5rem;
+	border-radius: 1rem 1rem 0px 0px;	
+}
